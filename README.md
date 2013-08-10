@@ -1,0 +1,4 @@
+codeschnipsel
+=============
+
+Verschiedene vorgefertigte Codes
