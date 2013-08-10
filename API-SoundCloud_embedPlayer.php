@@ -1,19 +1,27 @@
 <?php
-/////////////// SoundCloud-Player Parameter ////////////////
+//////////////////////// SoundCloud-Player Parameter ///////////////////////////////////////////////////
+/*
+ Die ID eines Tracks kann man sich z.B. so holen indem man über den Download Button unter dem Player auf soundcloud.com mit der Maus fährt.
+ 
+ ||| Beispiel Link: https://api.soundcloud.com/tracks/[TRACK-ID]/download?client_id=b45b1aa10f1ac2941910a7f0d10f8e28 |||
+ 
+ Man braucht nur die 9-stellige Zahl die dort steht wo jetzt im Beispiel Link [TRACK-ID] steht siehe unten einzutragen!
+ */
+$track_id="103936820";    // ID des SoundCloud Tracks siehe oben!
+$player_color="ca2828";   // Farbcode ohne die übliche # vor dem Code
+$autoplay="false";        // true|false
+$download="false";        // true|false
+$sharing="false";         // true|false
+$comments="false";        // true|false
+$like="false";            // true|false
 
-$track_id="103936820";     // ID des SoundCloud Tracks
-$player_color="ca2828";    // Farbcode ohne die übliche # vor dem Code
-$autoplay="false";         // true|false 
-$download="false";         // true|false
-$sharing="false";          // true|false
-$comments="false";         // true|false
-$like="false";             // true|false
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
+	<head>
 		<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
 	</head>
 	<body>
