@@ -14,6 +14,8 @@ $download="false";        // true|false
 $sharing="false";         // true|false
 $comments="false";        // true|false
 $like="false";            // true|false
+$buying="false";          // true|false
+$playcount="false";       // true|false
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -25,7 +27,7 @@ $like="false";            // true|false
 		<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/<?=$track_id ?>&amp;color=<?=$player_color ?>&amp;auto_play=<?=$autoplay ?>&amp;auto_advance=false&amp;buying=false&amp;liking=<?=$like ?>&amp;download=<?=$download ?>&amp;sharing=<?=$sharing ?>&amp;show_artwork=true&amp;show_comments=<?=$comments ?>&amp;show_playcount=false&amp;show_user=false&amp;start_track=0&amp;callback=true" width="100%" height="115" scrolling="no" frameborder="no"></iframe>
+		<iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/<?=$track_id ?>&amp;color=<?=$player_color ?>&amp;auto_play=<?=$autoplay ?>&amp;auto_advance=false&amp;buying=<?=$buying ?>&amp;liking=<?=$like ?>&amp;download=<?=$download ?>&amp;sharing=<?=$sharing ?>&amp;show_artwork=true&amp;show_comments=<?=$comments ?>&amp;show_playcount=<?=$playcount ?>&amp;show_user=false&amp;start_track=0&amp;callback=true" width="100%" height="115" scrolling="no" frameborder="no"></iframe>
 		<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			( function() {
